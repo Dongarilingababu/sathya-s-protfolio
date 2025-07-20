@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satya Karthik Boddu | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .glass-box {
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 1rem;
+      max-width: 800px;
+      transition: transform 0.3s ease;
+    }
+
+    .glass-box:hover {
+      transform: scale(1.03);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00fff7;
+    }
+
+    p, li {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      font-size: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    a {
+      color: #00fff7;
+      text-decoration: none;
+    }
+
+    .cursor-wave {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #00fff7 0%, transparent 80%);
+      pointer-events: none;
+      mix-blend-mode: overlay;
+      z-index: 999;
+      transition: transform 0.1s ease;
+    }
+
+    @media screen and (max-width: 768px) {
+      .glass-box {
+        margin: 1rem 0.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cursor-wave" id="cursorWave"></div>
+
+<header>
+  Satya Karthik Boddu - Portfolio
+</header>
+
+<section class="section" id="about">
+  <div class="glass-box">
+    <h2>About Me</h2>
+    <p>I am <strong>Satya Karthik Boddu</strong>, a passionate and creative 3rd-year B.Tech student specializing in Artificial Intelligence and Machine Learning. I build AI solutions, web apps, and continuously learn new technologies. I enjoy creating clean, modern UIs and solving real-world problems.</p>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="glass-box">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Languages: Python, Java, C</li>
+      <li>Frameworks: TensorFlow, React, Node.js</li>
+      <li>Tools: Git, VSCode, MongoDB, Postman</li>
+      <li>Web: HTML, CSS, JavaScript, Tailwind CSS</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="glass-box">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>AI Chatbot</strong>: A Python-based conversational agent using NLP techniques.</li>
+      <li><strong>Smart Attendance</strong>: A face recognition-based attendance system using OpenCV and Python.</li>
+      <li><strong>Personal Portfolio Website</strong>: This elegant, animated website to showcase my work and skills.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="achievements">
+  <div class="glass-box">
+    <h2>Achievements & Certifications</h2>
+    <ul>
+      <li>Coursera AI for Everyone by Andrew Ng</li>
+      <li>Python Programming – Infosys Springboard</li>
+      <li>3rd Prize – State-Level Hackathon 2024</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="glass-box">
+    <h2>Contact Me</h2>
+    <p>📞 Phone: 9123456789</p>
+    <p>✉️ Email: <a href="mailto:satyakarthik@example.com">satyakarthik@example.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/satyakarthik" target="_blank">linkedin.com/in/satyakarthik</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Satya Karthik Boddu. All Rights Reserved.
+</footer>
+
+<script>
+  // Cursor wave effect
+  const wave = document.getElementById('cursorWave');
+  document.addEventListener('mousemove', (e) => {
+    wave.style.left = `${e.pageX - 100}px`;
+    wave.style.top = `${e.pageY - 100}px`;
+  });
+</script>
+
+</body>
+</html>
